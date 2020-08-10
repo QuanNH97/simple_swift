@@ -3,9 +3,9 @@
 //2. chọn từng phần tử một vào output sao cho không trùng vs kí tự cuối cùng của output
 //3. xoá phần tử vừa chọn, sắp xếp lại mảng, lặp lại bước 2
 
-func abc(_ str :String) -> String{
+func convertString(_ str: String) -> String{
     let arr = Array(str)
-    var arrResult :Array<Character> = []
+    var arrResult: Array<Character> = []
     
     var arrSorted = sort(arr) //sap xep theo thu tu tan so xuat hien cua ki tu
     
@@ -32,7 +32,7 @@ func sort(_ arr :Array<Character>) -> Array<Character> {
     return arrSorted
 }
 
-abc("abccaabcaaaab")
+convertString("abccaabcaaaab")
 
 
 
